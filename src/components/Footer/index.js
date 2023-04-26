@@ -42,8 +42,8 @@ export default function Footer() {
             <div className="col mb-3 ps-3  footer-sections">
                 <h5>About developers <br/> © 2023</h5>
                 <ul className="nav flex-column">
-                    <li className="nav-item mb-2"><a href="#" className="nav-link p-0 "> <i class="fa-brands fa-github"></i><small>  leandro666m </small></a></li>
-                    <li className="nav-item mb-2"><a href="#" className="nav-link p-0 ">  <i class="fa-brands fa-github"></i><small>leandrito12 </small></a></li>
+                    <li className="nav-item mb-2"><a href="#" className="nav-link p-0 "> <i className="fa-brands fa-github"></i><small>  leandro666m </small></a></li>
+                    <li className="nav-item mb-2"><a href="#" className="nav-link p-0 ">  <i className="fa-brands fa-github"></i><small>leandrito12 </small></a></li>
                 </ul>
             </div>
             
