@@ -1,0 +1,26 @@
+
+/* footer */
+footer{
+    padding-left: 7rem ;
+    padding-right: 7rem ;
+    background: rgb(39,37,123);
+    background: linear-gradient(180deg,  rgb(0 0 0 / 70%) 0%, rgb(16 18 24 / 99%) 98%);
+    color: azure;
+}
+
+.img-footer{
+    width: 100%; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-image: url("./img/image-footer.png"); */
+}
+
+.logotipo-footer{
+    width: 8rem;
+    /* margin:  7rem 7rem 2rem 7rem;  */
+}
+
+.nav-link{
+    color: rgb(189, 189, 189);
+}
