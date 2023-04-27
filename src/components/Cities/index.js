@@ -4,13 +4,10 @@ import Header from '../Header'
 import ButtonCTA from '../ButtonCTA'
 
 export default function Cities() {
-
-
   return (
     <section>
       <div className="img-pagconstruccion">
-           <ButtonCTA  texto='Home'/>
-          <img src={require("../../assets/images/construccion.jpg")} alt="" />
+          <img src={require("../../assets/images/construccion.png")} alt="" />
       </div>
     </section> 
   )

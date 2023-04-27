@@ -1,6 +1,6 @@
 button{
     height: 48px; width: 176px;
-    margin: 2rem 3rem 0rem 0rem   ;
+    margin-top: 3rem;
     color: azure;
     background-image: linear-gradient(to right, #ca3d00, #d74f11, #e56020, #f2702e, #ff803c); 
     font-size: 1rem;

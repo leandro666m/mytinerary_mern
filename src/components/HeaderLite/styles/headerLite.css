@@ -1,24 +1,24 @@
 
-.header{
+.headerLite{
     font-family: 'Comfortaa', cursive; color: aliceblue;
-    height: 1100px;
-    
+    height: 300px;
     background: linear-gradient(180deg, rgb(0 0 0 / 61%) 21%, rgba(52,49,164,0.4) 75%);
 }
 
-.logotipo{
+.logotipo-headerLite{
     width: 8rem;
-    margin: 8rem 0rem 6rem 7rem;
+    margin: 2rem 0rem 1rem 7rem;
 }
 
-.icono-user{
+.icono-user-headerLite{
     font-size: 2.5rem;
     font-weight: bold;
     color: #F77735;
-    margin: 8rem 7rem 6rem 0rem;
+    margin: 4rem 7rem 1rem 0rem;
 }
 
-.sloganybtns{
+.btnHeaderLite{
     width: 50%;
-    margin-left: 8rem;
+    margin-top: 1rem;
+    margin-left: 7rem;
 }

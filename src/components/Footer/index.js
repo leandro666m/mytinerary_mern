@@ -14,10 +14,10 @@ export default function Footer() {
                 </a>
 
                 <div className="d-flex mt-md-5">
-                    <i className="fa-brands fa-facebook mx-1 fs-2"></i>
-                    <i className="fa-brands fa-instagram mx-1 fs-2"></i>
-                    <i className="fa-brands fa-youtube mx-1 fs-2"></i>
-                    <i className="fa-brands fa-twitter mx-1 fs-2"></i>
+                <a href="#" className="nav-link"> <i className="fa-brands fa-facebook mx-1 fs-2"></i> </a>
+                <a href="#" className="nav-link"> <i className="fa-brands fa-instagram mx-1 fs-2"></i> </a>
+                <a href="#" className="nav-link"> <i className="fa-brands fa-youtube mx-1 fs-2"></i> </a>
+                <a href="#" className="nav-link"> <i className="fa-brands fa-twitter mx-1 fs-2"></i> </a>
                 </div>
             </div>
 
@@ -43,7 +43,7 @@ export default function Footer() {
                 <h5>About developers <br/> © 2023</h5>
                 <ul className="nav flex-column">
                     <li className="nav-item mb-2"><a href="#" className="nav-link p-0 "> <i className="fa-brands fa-github"></i><small>  leandro666m </small></a></li>
-                    <li className="nav-item mb-2"><a href="#" className="nav-link p-0 ">  <i className="fa-brands fa-github"></i><small>leandrito12 </small></a></li>
+                    <li className="nav-item mb-2"><a href="#" className="nav-link p-0 ">  <i className="fa-brands fa-github"></i><small> leandrito12 </small></a></li>
                 </ul>
             </div>
             
