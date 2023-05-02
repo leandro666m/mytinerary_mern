@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./styles/cities.css";
 import Header from "../Header";
 import ButtonCTA from "../ButtonCTA";
+import axios from "axios";
 
 let conjuntoCiudades = [
   {
@@ -44,17 +45,43 @@ let conjuntoCiudades = [
     imageURL: "https://www.diarioestrategia.cl/images/showid/1926084",
   },
 ];
+
 export default function Cities() {
+
+  let [data, setData] = useState( [{ 
+        name: "ER",
+        country: "Argentina",
+        description: "Todos los verdes",
+        imageURL: "htttp:"}]
+        )
+  
+  useEffect( ()=> {
+      axios.get( "http://localhost:3000/api/cities" )
+      .then( json => { 
+                setData(json.data);
+                console.log( json.data );
+              }
+          )
+                
+    } ,
+    [] 
+  )
+/*
+  useEffect( ()=> {
+    axios.post( "http://localhost:3000/api/cities?id:fdsfadsa", { "name": "cdsacs", } )
+    .then( response => console.log(response.data) )
+  } ,
+  [] 
+  )
+*/
+
   return (
     <>
-      <section className="container d-flex justify-content-around flex-wrap">
-        {conjuntoCiudades.map((ciudad) => (
-          <div
-            className="card bg-transparent text-white  mx-3 my-4"
-            style={{ width: "18rem", height: "34rem" }}
-          >
+      <section className="container-fluid d-flex justify-content-around flex-wrap">
+        {data.map((ciudad, index) => (
+          <div className="card bg-transparent text-white  mx-3 my-4" style={{ width: "18rem", height: "34rem" }} key={index} >
             <div className="div-title align-self-center">
-              <p class="Card-Title  px-4 py-1 rounded-pill  text-center">
+              <p className="Card-Title  px-4 py-1 rounded-pill  text-center">
                 {ciudad.country}
               </p>
             </div>
