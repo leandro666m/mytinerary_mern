@@ -2,11 +2,7 @@ body {
   font-family: "Comfortaa", cursive;
   color: aliceblue;
 }
-section{
-  
-background: radial-gradient(circle, rgba(123,122,201,0.1) 0%,  rgba(0,0,0,0.48783263305322133) 100%);
-padding: 0% 10%;
-}
+
 
 .img-pagconstruccion {
   display: flex;
@@ -35,6 +31,9 @@ padding: 0% 10%;
 
 .image-card {
   height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .div-title {

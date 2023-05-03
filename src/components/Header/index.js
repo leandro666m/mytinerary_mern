@@ -13,7 +13,8 @@ export default function Header() {
               </div>
               <div className="sloganybtns">
                   <h2 >Find your perfect trip, designed by insiders who know and love their citiest.</h2>
-                     <ButtonCTA />
+                  <ButtonCTA buttonText="Explore Cities" buttonLink="/cities" />
+
               </div>
           </header>
       </div>

@@ -1,6 +1,6 @@
-button{
+.buttonCTA{
     height: 48px; width: 176px;
-    margin-top: 3rem;
+    margin-top: 1rem;
     color: azure;
     background-image: linear-gradient(to right, #ca3d00, #d74f11, #e56020, #f2702e, #ff803c); 
     font-size: 1rem;
