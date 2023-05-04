@@ -2,19 +2,20 @@ import React, { useEffect, useState } from "react";
 import "./styles/cities.css";
 import ButtonCTA from "../ButtonCTA";
 import axios from "axios";
+import { useDispatch, useSelector } from "react-redux"
 
 export default function Cities(props) {
-
-  let [data, setData] = useState( [{ 
+ 
+  let [data, setData] = useState( [ { 
     name: "loading",
     country: "loading",
     description: "",
-    imageURL: "https://miro.medium.com/v2/resize:fit:1400/1*CsJ05WEGfunYMLGfsT2sXA.gif"}]
-    )
+    imageURL: "https://miro.medium.com/v2/resize:fit:1400/1*CsJ05WEGfunYMLGfsT2sXA.gif"} ]
+    ) 
 
   useEffect( ()=> {
       axios.get( "http://localhost:3000/api/cities" )
-      .then( json => setData(json.data) )
+      .then( resp => setData(resp.data) )
     } ,
     []   )
 

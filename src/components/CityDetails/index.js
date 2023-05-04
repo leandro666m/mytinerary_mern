@@ -21,7 +21,7 @@ export default function CityDetails() {
       <div className="container card-details">
         <h1>{city.name}</h1>
         <div className="img-details-container">
-          <img src={city.imageURL} alt={city.name} />
+          <img src={city.imageURL} alt={city.name} className="img-details"/>
         </div>
         <p className="description-details">{city.description}</p>
         <ButtonCTA buttonText="Back to explore" buttonLink='/cities' />
