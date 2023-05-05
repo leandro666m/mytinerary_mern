@@ -4,7 +4,7 @@ import hotelReducer from "../slices/hotels/hotelSlice"
 
 export const store = configureStore( {
     reducer: { 
-        city: cityReducer,
+        cities: cityReducer,
         hotel: hotelReducer    
     }
 }  )

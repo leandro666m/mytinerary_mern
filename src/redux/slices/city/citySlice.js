@@ -1,16 +1,24 @@
 import { createSlice } from "@reduxjs/toolkit";
+import axios from "axios";
 
 const initialState = {
-    name: "",
-    country: "",
-    description: "",
-    imageURL: ""
-}
+  data: [
+    {
+      name: "",
+      country: "",
+      description: "",
+      imageURL: "",
+    },
+  ],
+};
 
  export const citySlice = createSlice( {
-        name : "city",
+        name : "cities",
         initialState,
         reducers: {
+            setCities: (state, action) => {
+                 state.data = action.payload; 
+              },
                 changeCity:(state, action) => {
                     const { name,country,description } = action.payload
                     state.name = name
@@ -32,7 +40,23 @@ const initialState = {
         },
 
     }   );
+
+    // acción asíncrona para obtener los datos de la API y actualizar el estado del store
+    export const fetchCities = () => async (dispatch) => {
+      try {
+        const response = await axios.get("http://localhost:3000/api/cities");
+
+        dispatch( setCities( response.data ) );
+      } catch (error) {
+        console.error(`Error en fetchCities (citySlice.js): ${error}`);
+      }
+    };
+
     /* export const { changeCity} = citySlice.actions */
-    export const { changeCity, changeCityImage, resetCity, filterCityPorNombre } = citySlice.actions
+    export const { changeCity, changeCityImage, resetCity, filterCityPorNombre,setCities } = citySlice.actions
             /* éstos son los actions(una copia), los de arriba son los reducers */
     export default citySlice.reducer /*es lo q se le pasa al store 'cityReducer' */
+
+
+
+
