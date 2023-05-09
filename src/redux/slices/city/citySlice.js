@@ -2,7 +2,14 @@ import { createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 
 const initialState = {
-    data: [  ],
+    data: [ {
+      name: "",
+      country: "",
+      description: "",
+      imageURL: "",
+      hotels: "",
+      itineraries: "" 
+    } ],
     dataFiltered: 
       {
         name: "",
