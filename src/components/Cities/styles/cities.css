@@ -7,10 +7,10 @@
 }
 
 .card {
-  position: relative;
-  width: 500px;
-  height: 360px;
-  border-radius: 10px;
+  position: relative !important;
+  width: 500px !important;
+  height: 360px !important;
+  border-radius: 10px !important;
   overflow: hidden;
 }
 

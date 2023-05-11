@@ -13,7 +13,7 @@ export default function Cities( ) {
           <section className="section-back container-fluid d-flex justify-content-around flex-wrap">
           {cities.map((ciudad, index) => (
             <div className="card bg-transparent text-white mx-1 my-4" key={index}>
-              <div className="box">
+
                   <div className="div-title">
                     <p className="city-country"> <b>{ciudad.country}</b> </p>
                   </div>
@@ -25,7 +25,7 @@ export default function Cities( ) {
             
                   <div className="gradiant "></div>
                   <img src={ciudad.imageURL} className="image-card" alt="foto de ciudad" />
-              </div>
+
             </div>
           ))}
         </section>
