@@ -38,20 +38,20 @@
 
 /* itinerarios */
 .container-itineraries {
-  height: 400px;
+
   display: flex;
   justify-content: space-around;
   flex-direction: row;
   flex-wrap: wrap;
   align-content: center;
-  align-items: center;
+
   margin-top: 100px;
 }
 
 .itinerary {
   background-color: aliceblue;
   width: 300px;
-  height: 90%;
+  height: 435px;
   border: solid 2px rgb(13 110 253 / 26%);
   border-radius: 5px;
 }

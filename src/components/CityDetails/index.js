@@ -44,9 +44,10 @@ export default function CityDetails() {
                         <p className="likes"> <small><i className="fa-solid fa-heart"> </i>{iti.likes} likes</small></p>
                     <div className="card-cuerpo">
                         <h4 className="nameIti">{iti.nameItinerary} </h4>
-                        <h5>Autor: {iti.nameAutor} </h5>
+                        <h6>Autor:{iti.nameAutor} </h6>
                         <p>Value: ${iti.precio} </p>
                         <p>Duration: {iti.duracion} dias</p>
+                        <p>{iti.description} </p>
                         {iti.hashtags.length !== 0 && (
                           <div className="hashtags">
                             {iti.hashtags.map((ht) => (
