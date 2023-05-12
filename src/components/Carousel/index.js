@@ -15,7 +15,7 @@ return (
 
         <section id="carouseles">
             <h1>Popular Mytineraries</h1>
-            <div id="carouselExampleFade" className="carousel carousel-dark slide carousel-fade" data-bs-ride="carousel">
+            <div id="carouselExampleAutoplaying" className="carousel slide carousel-fade" data-bs-ride="true" data-bs-touch="true">
                 <div className="carousel-inner">
 
                     <div className="carousel-item active d-flex flex-row justify-content-between ">
@@ -36,7 +36,7 @@ return (
                         </div>
                     </div>
 
-                     <div className="carousel-item  d-flex flex-row justify-content-between ">
+                     <div className="carousel-item d-flex flex-row justify-content-between ">
 
                         <div className="carousel-imgtex-container d-flex flex-column align-items-center">
                             <img src={cities[randomIndex1].imageURL} className="d-block w-100 object-fit-cover " alt="..." />
@@ -74,15 +74,15 @@ return (
                     </div> 
 
                 </div>
+                        <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span className="visually-hidden">Previous</span>
+                        </button>
+                        <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span className="visually-hidden">Next</span>
+                        </button>
 
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
             </div>
         <p>If not now, then when? <br /> Travel with us to your next adventure</p>
         </section>
