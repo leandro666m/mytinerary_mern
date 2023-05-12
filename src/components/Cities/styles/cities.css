@@ -2,8 +2,8 @@
 .section-back {
   display: flex;
   flex-wrap: wrap;
-  background-color: #f1d3ac5e;
-    backdrop-filter: blur(9px);
+  background-color: #f1d3acd6;
+    backdrop-filter: blur(10px);
 }
 
 .card {

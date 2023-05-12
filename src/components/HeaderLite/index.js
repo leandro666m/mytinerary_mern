@@ -5,7 +5,16 @@ import ButtonCTA from '../ButtonCTA'
 
 export default function HeaderLite() {
     const location = useLocation();
-    const buttonLink = location.pathname.includes("/cities/") ? "/cities" : "/";
+    
+    let buttonLink="";        
+    let buttonText ="";
+    if(location.pathname.endsWith("/cities") ){
+         buttonLink = "/"
+         buttonText = "Back to home"
+    }else{
+         buttonLink = "/cities"
+        buttonText = "Back to explore"
+    }
   return (
       <div>
           <header className='headerLite'>
@@ -14,7 +23,7 @@ export default function HeaderLite() {
                    <a href="/">  <i className="fa-regular fa-circle-user icono-user-headerLite"></i>  </a> 
               </div>
               <div className="btnHeaderLite">
-              <ButtonCTA buttonText="Back to home" buttonLink={buttonLink} />
+              <ButtonCTA buttonText={buttonText} buttonLink={buttonLink} />
               </div>
           </header>
       </div>
